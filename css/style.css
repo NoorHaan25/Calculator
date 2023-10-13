@@ -14,7 +14,7 @@
   --background-color:#010101;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #3d3a3a;
 }
 .display-n{
@@ -41,6 +41,7 @@ body {
 .calculator .container .calculator-shape .operation-math{
   text-align: right;
   padding: 40px 20px 25px 0;
+  height: 185px;
 }
 
 .calculator-shape .calc > span {
@@ -74,6 +75,7 @@ body {
   justify-content: center;
   margin: 5px auto;
   border-radius: 50%;
+  cursor: pointer;
 }
 .calculator-shape .buttons > .arithmetic-operators {
   background-color: rgba(51, 51, 51, 1);
@@ -92,7 +94,7 @@ body {
 .icons-menu{
   position: fixed;
   right: 0;
-  top: 189px;
+  top: 0px;
   z-index: 5000;
   background-color: #fff;
   border-radius: 10px 0 0 10px;
@@ -107,7 +109,7 @@ body {
 .nav-fixed{
   position: fixed;
     right: 0;
-    top: 165px;
+    top: 0px;
     z-index: 1000;
     background-color: #ffffff;
     padding: 11px;
