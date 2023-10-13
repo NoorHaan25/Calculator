@@ -47,6 +47,7 @@ if (getTheme === "dark") {
 }
 
 const operationMath = document.getElementById("operation-math");
+const operationMathOld = document.getElementById("operation-math-old");
 const result = document.getElementById("result");
 const keys = document.querySelectorAll(".button > span");
 keys.forEach((key) => {
@@ -132,6 +133,8 @@ keys.forEach((key) => {
           .replace(/÷/g, "/")
           .replace(/%/g, "/100");
         result.textContent = eval(finalValue);
+        let prevOperation = result.textContent;
+        operationMath.textContent = prevOperation
       default:
         break;
     }
