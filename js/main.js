@@ -72,11 +72,19 @@ keys.forEach((key) => {
       case "7":
       case "8":
       case "9":
-      case "0":
-      case "00":
-      case ".":
         operationMath.textContent += key.textContent;
         break;
+      case "0":
+      case "00":
+        if (operationMath.textContent !== '') {
+          operationMath.textContent += key.textContent;
+        }
+        break;
+      case ".":
+          if(operationMath.textContent.slice(-1) !== '.')
+          {operationMath.textContent += key.textContent;}
+          // console.log(operationMath.textContent.slice(-1) =='.');
+      break;
       case "+":
         if (
           operationMath.textContent !== "" &&

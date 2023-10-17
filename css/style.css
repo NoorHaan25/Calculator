@@ -17,7 +17,9 @@ body {
   font-family: 'Roboto', sans-serif;  
   background-color: #3d3a3a;
   user-select: none;
+  
 }
+
 .display-n{
   display: none;
 }
@@ -45,8 +47,11 @@ body {
   height: 170px;
   border-radius: 32px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow-y: scroll;
 }
-
+.calculator .container .calculator-shape .operation-math::-webkit-scrollbar{
+  display: none;
+}
 .calculator-shape .calc > span {
   text-align: right;
   color: var(--text-color);
